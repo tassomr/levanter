@@ -10,7 +10,7 @@ const restartWindow = 30000 // 30 seconds
 let lastRestartTime = Date.now()
 
 function startNode() {
-  const child = spawn('node', ['index.js'], { cwd: 'levanter', stdio: 'inherit' })
+  const child = spawn('node', ['index.js'], { cwd: 'levanter'
 
   child.on('exit', (code) => {
     if (code !== 0) {
